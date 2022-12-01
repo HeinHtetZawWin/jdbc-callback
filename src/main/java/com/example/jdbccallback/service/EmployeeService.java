@@ -16,5 +16,16 @@ public class EmployeeService {
         System.out.println();
         System.out.println("list all employees");
         employeeDao.listEmployee().forEach(System.out::println);
+        System.out.println();
+        System.out.println("Average RowCallbackHandler");
+        System.out.println("Employee's Salary Average::" +
+                employeeDao.averageEmployeeSalaryRowCallBackHandler());
+        System.out.println();
+        System.out.println("Average ResultSetExtractor");
+        System.out.println("Employee's Salary Average::" +
+                employeeDao.averageEmployeeSalaryResultSetExtractor());
+        System.out.println();
+        System.out.println("Average Database Level::");
+        System.out.println("Employee's Salary Average:" + employeeDao.averageDatabaseLevel());
     }
 }
