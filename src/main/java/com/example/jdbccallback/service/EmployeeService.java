@@ -26,6 +26,9 @@ public class EmployeeService {
                 employeeDao.averageEmployeeSalaryResultSetExtractor());
         System.out.println();
         System.out.println("Average Database Level::");
-        System.out.println("Employee's Salary Average:" + employeeDao.averageDatabaseLevel());
+        System.out.println("Employee's Salary Average::" + employeeDao.averageDatabaseLevel());
+        System.out.println();
+        System.out.println("Average Database Modern Way::");
+        System.out.println("Employee's Salary Average Modern Way::" + employeeDao.averageModernWay());
     }
 }
